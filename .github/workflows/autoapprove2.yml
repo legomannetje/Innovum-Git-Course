@@ -26,6 +26,4 @@ jobs:
       - name: Automatic Approve
         uses: mheap/automatic-approve-action@v1
         with:
-          token: ${{ secrets.PAT }}
-          workflows: "pr.yml,lint.yml"
-          dangerous_files: "build.js"
+          token: "${{ secrets.GITHUB_TOKEN }}"
